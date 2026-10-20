@@ -1,25 +1,85 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Description.css"
+
 const Description = () => {
+  const [activeTab, setActiveTab] = useState("desc")
+
   return (
-    <div className='descriptionbox'>
+    <div className='descriptionbox-container'>
+      <div className='descriptionbox'>
         <div className="descriptionbox-navigator">
-            <div className="descriptionbox-nav-box">
-                Description
-            </div>
-            <div className="descriptionbox-nav-box fade">
-         Review (135)
-            </div>
-            
+          <button 
+            type="button"
+            className={`descriptionbox-nav-box ${activeTab === 'desc' ? 'active' : ''}`}
+            onClick={() => setActiveTab('desc')}
+          >
+            Product Overview
+          </button>
+          <button 
+            type="button"
+            className={`descriptionbox-nav-box ${activeTab === 'reviews' ? 'active' : ''}`}
+            onClick={() => setActiveTab('reviews')}
+          >
+            Verified Reviews (135)
+          </button>
+          <button 
+            type="button"
+            className={`descriptionbox-nav-box ${activeTab === 'shipping' ? 'active' : ''}`}
+            onClick={() => setActiveTab('shipping')}
+          >
+            Shipping & Returns
+          </button>
         </div>
+
         <div className="descriptionbox-description">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium reiciendis exercitationem amet totam nisi ullam cumque fugit magnam laudantium. Quis eos quam alias nisi explicabo ut, itaque qui fuga officiis.
-                Maxime labore in molestiae, debitis vel, rem modi repudiandae ullam ipsam delectus dolores quibusdam reiciendis, hic temporibus beatae at aut possimus reprehenderit. Adipisci aut corporis iusto, excepturi quidem possimus omnis?
-                Molestias ipsam, odit maxime aperiam magnam quo debitis explicabo accusamus placeat unde inventore qui voluptate distinctio. Dolorem in pariatur ullam error adipisci earum officiis fugit unde, blanditiis, harum minus cumque.
-                Eligendi doloribus, officiis temporibus minima facilis officia est necessitatibus numquam blanditiis cum dignissimos vel unde fugit perspiciatis distinctio magnam, eos, qui repellendus quidem sunt nemo! Culpa facilis deserunt iure asperiores.
-             </p>
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed doloremque facilis neque non nihil quam veritatis a. Ratione dolore debitis quia possimus natus quo consequatur exercitationem quae unde, laboriosam iure!</p>
+          {activeTab === 'desc' && (
+            <div className="tab-pane">
+              <p>
+                Engineered for versatility, comfort, and enduring sophistication. Each garment is meticulously crafted utilizing ethically sourced textiles designed to retain shape, vibrant texture, and pristine softness through repeated wear.
+              </p>
+              <div className="features-checklist">
+                <div>✓ 100% sustainably harvested fabric</div>
+                <div>✓ Reinforced seam durability for active mobility</div>
+                <div>✓ Pre-shrunk finish for dependable sizing</div>
+                <div>✓ Machine washable with low-heat tumble dry</div>
+              </div>
             </div>
+          )}
+
+          {activeTab === 'reviews' && (
+            <div className="tab-pane">
+              <div className="review-stat-summary">
+                <div className="rating-big">4.9</div>
+                <div>
+                  <strong>Overall Customer Satisfaction</strong>
+                  <p>Based on 135 verified purchaser ratings worldwide.</p>
+                </div>
+              </div>
+              <div className="sample-review">
+                <div className="review-header">
+                  <strong>Sarah M.</strong>
+                  <span className="review-verified">✓ Verified Buyer</span>
+                  <span className="review-rating">★★★★★</span>
+                </div>
+                <p>
+                  "The texture and fit exceeded my expectations! Fits true to size and feels like top designer luxury fashion. Received multiple compliments on day one."
+                </p>
+              </div>
+            </div>
+          )}
+
+          {activeTab === 'shipping' && (
+            <div className="tab-pane">
+              <p>
+                <strong>Express Delivery:</strong> Orders placed before 2 PM EST are dispatched the same business day. Delivery takes 2-4 business days.
+              </p>
+              <p>
+                <strong>Free Return Policy:</strong> If you are not completely satisfied, return items in original condition within 30 days for a full refund or direct size exchange with prepaid return shipping labels included in every box.
+              </p>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   )
 }
