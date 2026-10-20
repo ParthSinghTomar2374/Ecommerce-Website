@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import "./Navbar.css"
-import logo from "../../assets/logo.webp"
+import logo from "../../assets/logo.svg"
 import cart from "../../assets/cart_icon.png"
 import { Link, useLocation } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
@@ -26,11 +26,11 @@ const Navbar = () => {
       <nav className='navbar'>
         <Link to="/" className="nav-logo" onClick={() => setActiveMenu("home")}>
           <div className="nav-logo-badge">
-            <img src={logo} alt="Shopify Logo" />
+            <img src={logo} alt="Aura & Co. Logo" />
           </div>
           <div className="nav-logo-text">
-            <span>Shopify</span>
-            <span className="nav-logo-sub">Premium Store</span>
+            <span>Aura &amp; Co.</span>
+            <span className="nav-logo-sub">Luxury Apparel</span>
           </div>
         </Link>
 

@@ -20,7 +20,7 @@ const NewsLetter = () => {
         <span className="newsletter-badge">Stay Connected</span>
         <h2 className="newsletter-title">Get 15% Off Your First Order</h2>
         <p className="newsletter-subtitle">
-          Subscribe to the Shopify newsletter for exclusive collection releases, insider perks, and VIP private sales.
+          Subscribe to the Aura &amp; Co. newsletter for exclusive collection releases, insider perks, and VIP private sales.
         </p>
 
         {subscribed ? (

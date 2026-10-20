@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import logo from "../../assets/logo.webp"
+import logo from "../../assets/logo.svg"
 import instagram_icon from "../../assets/instagram.png"
 import facebook_icon from "../../assets/facebook.png"
 import whatsapp_icon from "../../assets/whatsapp.png"
@@ -14,9 +14,9 @@ const Footer = () => {
         <div className="footer-brand-col">
           <Link to="/" className="footer-logo">
             <div className="footer-logo-badge">
-              <img src={logo} alt="Shopify Logo" />
+              <img src={logo} alt="Aura & Co. Logo" />
             </div>
-            <span>Shopify</span>
+            <span>Aura &amp; Co.</span>
           </Link>
           <p className="footer-brand-desc">
             Your destination for contemporary fashion, timeless luxury essentials, and trend-setting styles for everyone.
@@ -62,7 +62,7 @@ const Footer = () => {
         <div className="footer-links-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="#about">About Shopify</a></li>
+            <li><a href="#about">About Aura &amp; Co.</a></li>
             <li><a href="#sustainability">Sustainability</a></li>
             <li><a href="#careers">Careers</a></li>
             <li><a href="#privacy">Privacy Policy</a></li>
@@ -73,7 +73,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="footer-bottom-container">
-          <p>© {new Date().getFullYear()} Shopify Inc. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Aura &amp; Co. All rights reserved.</p>
           <div className="footer-badges">
             <span className="footer-badge">🔒 256-Bit SSL Encryption</span>
             <span className="footer-badge">✨ 100% Authentic Quality</span>
