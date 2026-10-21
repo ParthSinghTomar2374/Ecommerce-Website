@@ -41,7 +41,6 @@
   z-index: 2;
 }
 
-/* Tag Pill */
 .hero-tag-pill {
   display: inline-flex;
   align-items: center;
@@ -66,7 +65,6 @@
   animation: pulseGlow 1.5s infinite;
 }
 
-/* Title */
 .hero-title {
   font-size: 56px;
   font-weight: 800;
@@ -91,7 +89,6 @@
   animation: float 3s ease-in-out infinite;
 }
 
-/* Description */
 .hero-description {
   font-size: 18px;
   line-height: 1.6;
@@ -100,7 +97,6 @@
   margin-bottom: 36px;
 }
 
-/* Actions */
 .hero-actions {
   display: flex;
   align-items: center;
@@ -171,7 +167,6 @@
   transform: translateY(-2px);
 }
 
-/* Stats */
 .hero-stats {
   display: flex;
   align-items: center;
@@ -208,7 +203,6 @@
   background: var(--border-light);
 }
 
-/* Right: Image Card */
 .hero-right {
   flex: 0.9;
   display: flex;
@@ -250,7 +244,6 @@
   transform: scale(1.02);
 }
 
-/* Floating Badges */
 .hero-float-badge {
   position: absolute;
   z-index: 3;
@@ -295,7 +288,6 @@
   margin: 0;
 }
 
-/* Responsive */
 @media (max-width: 992px) {
   .hero-container {
     flex-direction: column;

@@ -14,7 +14,6 @@
   gap: 50px;
 }
 
-/* Brand Column */
 .footer-brand-col {
   display: flex;
   flex-direction: column;
@@ -92,7 +91,6 @@
   filter: brightness(0) invert(1);
 }
 
-/* Link Columns */
 .footer-links-col h4 {
   font-size: 16px;
   font-weight: 700;
@@ -120,7 +118,6 @@
   padding-left: 4px;
 }
 
-/* Bottom Bar */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding: 24px 0;

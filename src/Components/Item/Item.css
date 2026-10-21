@@ -16,11 +16,10 @@
   border-color: #cbd5e1;
 }
 
-/* Image */
 .item-image-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 125%; /* 4:5 elegant fashion aspect ratio */
+  padding-top: 125%;
   overflow: hidden;
   background: #f8fafc;
 }
@@ -45,7 +44,6 @@
   transform: scale(1.06);
 }
 
-/* Discount Badge */
 .item-discount-badge {
   position: absolute;
   top: 12px;
@@ -61,7 +59,6 @@
   letter-spacing: 0.02em;
 }
 
-/* Quick Hover Action */
 .item-quick-overlay {
   position: absolute;
   bottom: 12px;
@@ -99,7 +96,6 @@
   color: white;
 }
 
-/* Product Info */
 .item-info {
   padding: 16px;
   display: flex;

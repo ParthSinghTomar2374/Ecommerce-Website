@@ -11,7 +11,6 @@
   align-items: flex-start;
 }
 
-/* Left Gallery */
 .productdisplay-left {
   display: flex;
   gap: 20px;
@@ -83,7 +82,6 @@
   transform: scale(1.05);
 }
 
-/* Right Details */
 .productdisplay-right {
   display: flex;
   flex-direction: column;
@@ -131,7 +129,6 @@
   color: var(--text-muted);
 }
 
-/* Prices */
 .productdisplay-right-prices {
   display: flex;
   align-items: baseline;
@@ -163,7 +160,6 @@
   margin-bottom: 28px;
 }
 
-/* Size Selector */
 .productdisplay-right-size {
   margin-bottom: 32px;
 }
@@ -223,7 +219,6 @@
   box-shadow: 0 4px 12px var(--primary-glow);
 }
 
-/* Add to Cart Button */
 .product-actions-wrap {
   margin-bottom: 36px;
 }
@@ -253,7 +248,6 @@
   box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4);
 }
 
-/* Trust Grid */
 .product-trust-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -286,7 +280,6 @@
   margin: 0;
 }
 
-/* Meta */
 .product-meta-row {
   display: flex;
   flex-direction: column;

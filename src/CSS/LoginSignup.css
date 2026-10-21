@@ -65,7 +65,6 @@
   line-height: 1.5;
 }
 
-/* Fields */
 .loginsignup-fields {
   display: flex;
   flex-direction: column;
@@ -101,7 +100,6 @@
   box-shadow: 0 0 0 4px var(--primary-subtle);
 }
 
-/* Checkbox */
 .loginsignup-agree {
   display: flex;
   align-items: flex-start;
@@ -123,7 +121,6 @@
   text-decoration: underline;
 }
 
-/* Submit Button */
 .auth-submit-btn, .loginsignup-container button {
   width: 100%;
   padding: 14px;
@@ -144,7 +141,6 @@
   box-shadow: 0 10px 24px rgba(79, 70, 229, 0.45);
 }
 
-/* Toggle */
 .loginsignup-toggle, .loginsignup-login {
   margin-top: 24px;
   text-align: center;

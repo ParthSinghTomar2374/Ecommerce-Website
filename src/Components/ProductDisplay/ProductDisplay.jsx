@@ -28,7 +28,6 @@ const ProductDisplay = (props) => {
   return (
     <div className='productdisplay-container'>
       <div className="productdisplay">
-        {/* Left Gallery */}
         <div className="productdisplay-left">
           <div className="productdisplay-img-list">
             {[1, 2, 3].map((_, idx) => (
@@ -52,7 +51,6 @@ const ProductDisplay = (props) => {
           </div>
         </div>
 
-        {/* Right Details */}
         <div className="productdisplay-right">
           <div className="product-category-tag">
             {product.category === 'kid' ? 'Kids Fashion' : product.category === 'men' ? "Men's Wear" : "Women's Collection"}
@@ -86,7 +84,6 @@ const ProductDisplay = (props) => {
             Tailored from ultra-breathable, premium fabric. Designed for all-day comfort with modern minimalist tailoring and durable stitching for lasting style.
           </p>
 
-          {/* Size Selector */}
           <div className='productdisplay-right-size'>
             <div className="size-header-row">
               <h3>Select Size</h3>
@@ -106,7 +103,6 @@ const ProductDisplay = (props) => {
             </div>
           </div>
 
-          {/* Add to Cart CTA */}
           <div className="product-actions-wrap">
             <button 
               className={`product-add-btn ${isAdded ? 'added' : ''}`} 
@@ -116,7 +112,6 @@ const ProductDisplay = (props) => {
             </button>
           </div>
 
-          {/* Trust Guarantees */}
           <div className="product-trust-grid">
             <div className="trust-item">
               <span className="trust-icon">🚚</span>

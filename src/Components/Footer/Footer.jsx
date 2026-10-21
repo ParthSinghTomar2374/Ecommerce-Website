@@ -10,7 +10,6 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <div className="footer-container">
-        {/* Brand Column */}
         <div className="footer-brand-col">
           <Link to="/" className="footer-logo">
             <div className="footer-logo-badge">
@@ -34,7 +33,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Categories */}
         <div className="footer-links-col">
           <h4>Collections</h4>
           <ul>
@@ -46,7 +44,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Customer Care */}
         <div className="footer-links-col">
           <h4>Customer Care</h4>
           <ul>
@@ -58,7 +55,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Company */}
         <div className="footer-links-col">
           <h4>Company</h4>
           <ul>

@@ -33,7 +33,6 @@ const CItems = () => {
   const discountAmount = rawSubtotal * discount;
   const finalTotal = Math.max(0, rawSubtotal - discountAmount);
 
-  // Empty Cart State
   if (totalItemsCount === 0) {
     return (
       <div className="cart-empty-container">
@@ -57,7 +56,6 @@ const CItems = () => {
       </div>
 
       <div className="cart-layout-grid">
-        {/* Left: Cart Items List */}
         <div className="cart-items-column">
           <div className="cart-table-header">
             <span>Product</span>
@@ -133,7 +131,6 @@ const CItems = () => {
           </div>
         </div>
 
-        {/* Right: Order Summary */}
         <div className="cart-summary-column">
           <div className="cart-summary-card">
             <h3>Order Summary</h3>
@@ -162,7 +159,6 @@ const CItems = () => {
               <span>${finalTotal.toFixed(2)}</span>
             </div>
 
-            {/* Promo Code Box */}
             <form onSubmit={handleApplyPromo} className="promo-form-wrap">
               <div className="promo-input-group">
                 <input

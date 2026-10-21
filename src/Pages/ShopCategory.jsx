@@ -9,10 +9,8 @@ const ShopCategory = (props) => {
   const [sortBy, setSortBy] = useState("default");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  // Filter products by category
   let categoryProducts = all_product.filter((item) => item.category === props.category);
 
-  // Sorting logic
   if (sortBy === "low-to-high") {
     categoryProducts = [...categoryProducts].sort((a, b) => a.new_price - b.new_price);
   } else if (sortBy === "high-to-low") {
@@ -25,7 +23,6 @@ const ShopCategory = (props) => {
 
   return (
     <div className='shopcategory-container'>
-      {/* Banner */}
       <div className="shopcategory-banner-card">
         <img className='shopcategory-banner' src={props.banner} alt={`${categoryName} Collection Banner`} />
         <div className="shopcategory-banner-overlay">
@@ -35,7 +32,6 @@ const ShopCategory = (props) => {
         </div>
       </div>
 
-      {/* Filter / Sort Bar */}
       <div className='shopcategory-indexSort'>
         <p className="shopcategory-count">
           Showing <span>1-{categoryProducts.length}</span> of {categoryProducts.length} products
@@ -86,7 +82,6 @@ const ShopCategory = (props) => {
         </div>
       </div>
 
-      {/* Products Grid */}
       <div className="shopcategory-products">
         {categoryProducts.map((item, i) => (
           <Item
@@ -100,7 +95,6 @@ const ShopCategory = (props) => {
         ))}
       </div>
 
-      {/* Explore More Button */}
       <div className="shopcategory-loadmore-wrap">
         <button className="shopcategory-loadmore" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           Back to Top ↑
